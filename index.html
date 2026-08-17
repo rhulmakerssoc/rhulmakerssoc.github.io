@@ -435,6 +435,97 @@
         </div>
       </div>
     </section>
+
+
+
+    <section id="committee" class="py-5">
+      <div class="container">
+
+        <!-- header -->
+        <div class="row justify-content-center mb-5 text-center">
+          <div class="col-lg-8">
+            <h2 class="display-6 fw-bold mb-3">Meet the Comittee</h2>
+            <p class="text-muted">The student committee running the society, organising workshops, and managing
+              equipment.</p>
+          </div>
+        </div>
+        <!-- resuable comitte cards-->
+        <div class="row g-4 justify-content-center">
+
+          <committee-card 
+            name="JJ Littleton"
+            role="President" 
+            pronouns="he/they"
+            course="PhD Electronic Engineering &bull; Year 2" 
+            email="zjee026@live.rhul.ac.uk"
+            favourite="Enabling engineering for everyone; the robotics, the collabs, setting up a robot league for nearby universities; the charity and community."
+            about="Having called Royal Holloway home for many years now, I love to bring communities together. In my spare time, I build robots & adaptive equipment."
+          >
+          </committee-card>
+          <committee-card 
+            name="Charlie Kingsland" 
+            role="Treasurer" 
+            pronouns="he/him"
+            course="BSc Computer Science (InfoSec) &bull; Year 3" 
+            email="znac411@live.rhul.ac.uk"
+            favourite="What I love most about Makers is the people - we are such a welcoming and creative group where I’ve made real friends and had the chance to learn and build cool stuff together."
+            about="I am incredibly passionate about Makers' Society, it has granted me many opportunities to engage with robotics and engineering."
+          >
+          </committee-card>
+          <committee-card 
+            name="Henry Li" 
+            role="Secretary" 
+            pronouns="he/him"
+            course="BEng Electronic Engineering &bull; Year 3" 
+            email="zmee034@live.rhul.ac.uk"
+            favourite="I always loved how the society widens my connections and the freedom we have to participate in a large variety of events, like the Robotics League and Lego building."
+          >
+          </committee-card>
+          <committee-card 
+            name="TBD" 
+            role="Events Coordinator" 
+            pronouns=""
+            course=" &bull; " 
+            email=""
+          >
+          </committee-card>
+          <committee-card 
+            name="TBD" 
+            role="EDI Opportunities Secretary" 
+            pronouns=""
+            course=" &bull; " 
+            email=""
+          >
+          </committee-card>
+        </div>
+      </div>
+    </section>
+    <!-- shared modal for all comittee -->
+    <div class="modal fade" id="committeeModal" tabindex="-1" aria-labelledby="committeeModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 border-0 shadow">
+          <div class="modal-header border-0 pb-0">
+            <h4 class="modal-title fw-bold" id="committeeModalTitle"></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <span class="badge mb-3" id="committeeModalRole"
+              style="background-color: #edf6e8; color: #498226; border: 1px solid rgba(92, 158, 49, 0.35);"></span>
+            <h6 class="fw-bold text-dark">Course</h6>
+            <p class="small text-muted mb-3" id="committeeModalCourse"></p>
+
+            <div id="committeeModalFavSection">
+              <h6 class="fw-bold text-dark">Favourite Part of Makers</h6>
+              <p class="small text-muted mb-3" id="committeeModalFav"></p>
+            </div>
+            <div id="committeeModalAboutSection">
+              <h6 class="fw-bold text-dark">About Me</h6>
+              <p class="small text-muted mb-0" id="committeeModalAbout"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- JS -->
