@@ -16,10 +16,110 @@ body {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #334155;
   background-color: #f8fafc;
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-family: "Montserrat", sans-serif;
   color: #0f172a;
   font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+section {
+  padding: 5rem 0;
+}
+section.section-alt {
+  background-color: #ffffff;
+}
+
+.btn-makers-blue {
+  background-color: #92d3f5;
+  color: #0f172a;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.btn-makers-blue:hover, .btn-makers-blue:focus {
+  background-color: #5bbde8;
+  color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(91, 189, 232, 0.35);
+}
+
+.btn-makers-green {
+  background-color: #5c9e31;
+  color: #ffffff;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.btn-makers-green:hover, .btn-makers-green:focus {
+  background-color: #498226;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(92, 158, 49, 0.35);
+}
+
+.badge-pill-brand {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 0.85rem;
+  border-radius: 50rem;
+}
+
+.badge-brand-blue {
+  background-color: #eaf6fc;
+  color: rgb(27.1818181818, 143, 193.8181818182);
+  border: 1px solid rgba(91, 189, 232, 0.25);
+}
+
+.badge-brand-yellow {
+  background-color: #fff9e6;
+  color: rgb(147.4672489083, 112.6113537118, 6.0327510917);
+  border: 1px solid rgba(246, 194, 35, 0.3);
+}
+
+.badge-committee {
+  background-color: #edf6e8;
+  color: #498226;
+  border: 1px solid rgba(92, 158, 49, 0.3);
+}
+
+.announcement-bar {
+  background-color: #ffd54f;
+  color: #0f172a;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.announcement-bar .announcement-link {
+  color: #0f172a;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.announcement-bar .announcement-link:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.navbar {
+  border-bottom: 1px solid #e2e8f0;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  color: #334155;
+  padding: 0.5rem 0.85rem;
+  transition: color 0.2s ease;
+}
+.navbar .nav-link:hover {
+  color: #0f172a;
+}
+.navbar .navbar-brand span {
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }/*# sourceMappingURL=style.css.map */

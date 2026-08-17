@@ -15,9 +15,10 @@ class CommitteeCard extends HTMLElement {
       <div class="card h-100 shadow-sm border text-center">
         <div class="card-body p-4 d-flex flex-column justify-content-between">
           <div>
-            <div class="rounded-circle d-inline-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px; background-color: #edf6e8; border: 3px solid #5c9e31; color: #498226; font-size: 2rem;">
-              <i class="bi bi-person-fill"></i>
-            </div>
+            <img src="https://placehold.co/400" 
+                alt="Member Name" 
+                class="rounded-circle mx-auto mb-3 d-block" 
+                style="width: 80px; height: 80px; object-fit: cover; border: 3px solid #5c9e31;">
             <div class="mb-2">
               <span class="badge" style="background-color: #edf6e8; color: #498226; border: 1px solid rgba(92, 158, 49, 0.35);">${role}</span>
             </div>
