@@ -1,0 +1,25 @@
+:root {
+  --makers-blue: #92d3f5;
+  --makers-blue-dark: #5bbde8;
+  --makers-yellow: #ffd54f;
+  --makers-yellow-dark: #f6c223;
+  --makers-green: #5c9e31;
+  --makers-green-dark: #498226;
+  --makers-dark: #0f172a;
+  --makers-slate: #334155;
+  --makers-muted: #64748b;
+  --makers-light: #f8fafc;
+  --makers-border: #e2e8f0;
+}
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #334155;
+  background-color: #f8fafc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #0f172a;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

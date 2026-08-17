@@ -1,0 +1,33 @@
+// ==========================================================================
+// Makers Society - Main SCSS
+// ==========================================================================
+
+@import 'variables';
+
+// Root CSS Custom Properties
+:root {
+  --makers-blue: #{$makers-blue};
+  --makers-blue-dark: #{$makers-blue-dark};
+  --makers-yellow: #{$makers-yellow};
+  --makers-yellow-dark: #{$makers-yellow-dark};
+  --makers-green: #{$makers-green};
+  --makers-green-dark: #{$makers-green-dark};
+  --makers-dark: #{$makers-dark};
+  --makers-slate: #{$makers-slate};
+  --makers-muted: #{$makers-muted};
+  --makers-light: #{$makers-light};
+  --makers-border: #{$makers-border};
+}
+
+// Base Setup
+body {
+  font-family: $font-family-body;
+  color: $makers-slate;
+  background-color: $makers-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  color: $makers-dark;
+  font-weight: 700;
+}
