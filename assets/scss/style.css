@@ -122,4 +122,184 @@ section.section-alt {
 .navbar .navbar-brand span {
   font-weight: 800;
   letter-spacing: -0.03em;
+}
+
+.hero {
+  padding: 5rem 0;
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+.hero .lead {
+  font-size: 1.15rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+.hero .d-flex.gap-4 span {
+  font-weight: 500;
+}
+.hero .d-flex.gap-4 span i {
+  color: rgb(30.3181818182, 159.5, 216.1818181818) !important;
+}
+
+#about .card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+#about .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+  border-color: rgba(146, 211, 245, 0.6) !important;
+}
+#about .card .fs-2.text-primary {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: #eaf6fc;
+  color: rgb(27.1818181818, 143, 193.8181818182) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem !important;
+  margin-bottom: 1rem;
+}
+#about .card ul li i {
+  color: #5c9e31 !important;
+}
+#about .card .card-note {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #64748b;
+  line-height: 1.45;
+}
+#about .card-spotlight {
+  background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+  border: 1px solid rgba(246, 194, 35, 0.35);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+}
+#about .card-spotlight .bi-trophy-fill {
+  color: rgb(220.96069869, 168.7336244541, 9.03930131) !important;
+}
+
+#events #calendarEventsContainer .card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+#events #calendarEventsContainer .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+  border-color: rgba(146, 211, 245, 0.6) !important;
+}
+#events .card-maker {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 50rem;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+}
+#events .card-maker .bi-calendar3 {
+  color: rgb(30.3181818182, 159.5, 216.1818181818) !important;
+}
+
+#join .card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#join .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+}
+#join .card .badge.bg-dark.rounded-circle {
+  width: 44px;
+  height: 44px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  background-color: #0f172a !important;
+  margin-bottom: 1.25rem;
+}
+
+#committee committee-card {
+  display: flex;
+}
+#committee committee-card .card {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+#committee committee-card .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+  border-color: rgba(92, 158, 49, 0.5) !important;
+}
+
+#committeeModal .modal-content {
+  border-radius: 1.25rem;
+  border: none;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+#committeeModal .modal-title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+#community .card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+#community .card i {
+  transition: transform 0.2s ease;
+}
+#community .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08) !important;
+  border-color: rgba(146, 211, 245, 0.6) !important;
+}
+#community .card:hover i {
+  transform: scale(1.15);
+}
+
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+}
+footer .h5, footer h5, footer h1, footer h2, footer h3, footer h4, footer h6, footer .brand-icon {
+  color: #ffffff;
+  font-weight: 700;
+}
+footer .text-muted {
+  color: #94a3b8 !important;
+}
+footer p {
+  color: #94a3b8;
+}
+footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+footer a:hover {
+  color: #ffffff;
+}
+footer a.text-info {
+  color: #92d3f5 !important;
+}
+footer a.text-info:hover {
+  color: rgb(216.0714285714, 239.2857142857, 251.4285714286) !important;
+}
+footer hr {
+  border-color: rgba(255, 255, 255, 0.15);
 }/*# sourceMappingURL=style.css.map */

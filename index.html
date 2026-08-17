@@ -22,6 +22,8 @@
 
   <!-- Custom Site Styles (Built from assets/scss/style.scss) -->
   <link rel="stylesheet" href="assets/scss/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.5.0/ical.min.js"></script>
 </head>
 
 <body>
@@ -139,7 +141,7 @@
                   <i class="bi bi-tools"></i>
                 </div>
                 <h4 class="card-title fw-bold h5 mb-3">Workshops</h4>
-                <p class="card-text text-muted small mb-2">
+                <p class="card-text text-muted mb-2">
                   Many of the following are covered in our workshops:
                 </p>
                 <ul class="list-unstyled text-muted small mb-0">
@@ -179,7 +181,7 @@
                   <i class="bi bi-clock-history"></i>
                 </div>
                 <h4 class="card-title fw-bold h5 mb-3">Access Hours</h4>
-                <p class="card-text text-muted small mb-0">
+                <p class="card-text text-muted mb-0">
                   As members, you can access the <strong>SHILLING-1-06</strong> electronics lab during our set access
                   hours, as long as there is staff &amp; committee present!
                 </p>
@@ -200,18 +202,19 @@
                     class="text-decoration-none fw-semibold">makers@royalholloway.su</a> &amp; we will work with you to
                   establish the needs of the file.
                 </p>
-                <p class="card-text text-muted small mb-0">
+                <p class="card-note mb-0">
                   In some cases, the file may be too large for our printer, in both materials or time. In these cases, a
                   "Large Print Charge" may need to be bought for us to print it.
                 </p>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- SURL spotlight banner -->
-          <div class="row">
-            <div class="col-12">
-              <div class="card-spotlight p-4 p-md-5">
+        <!-- SURL spotlight banner -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card-spotlight p-4 p-md-5">
                 <div class="row align-items-center">
                   <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
                     <div class="d-flex align-items-center gap-2 justify-content-center justify-content-md-start mb-2">
@@ -220,7 +223,7 @@
                     <h3 class="h4 fw-bold mb-2">Southern Universities Robotics League (SURL)</h3>
                     <p class="text-muted mb-0">
                       Founded right here at Royal Holloway, SURL brings university maker societies together for combat
-                      robotics showdowns, rover challenges, and technical engineering exhibitions.
+                      robotics showdowns, line-following challenges, and much more.
                     </p>
                   </div>
                   <div class="col-md-4 text-center text-md-end">
@@ -321,22 +324,24 @@
             </div>
           </div>
 
-          <!-- calendar view action -->
-          <div class="row">
-            <div class="col-12 text-center">
-              <div
-                class="card-maker p-3 p-md-4 d-inline-flex flex-wrap align-items-center justify-content-center gap-3">
-                <div class="d-flex align-items-center gap-2 text-dark fw-semibold">
-                  <i class="bi bi-calendar3 text-primary fs-5"></i>
-                  <span>Never miss an event:</span>
-                </div>
-                <a href="#" class="btn btn-makers-blue btn-sm rounded-pill px-3 py-1.5" id="subscribeCalendarBtn">
-                  <i class="bi bi-plus-circle me-1"></i>Subscribe to Google Calendar (.ics)
-                </a>
+        </div>
+
+        <!-- calendar view action -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <div
+              class="card-maker p-3 p-md-4 d-inline-flex flex-wrap align-items-center justify-content-center gap-3">
+              <div class="d-flex align-items-center gap-2 text-dark fw-semibold">
+                <i class="bi bi-calendar3 text-primary fs-5"></i>
+                <span>Never miss an event:</span>
               </div>
+              <a href="#" class="btn btn-makers-blue btn-sm rounded-pill px-3 py-1.5" id="subscribeCalendarBtn">
+                <i class="bi bi-plus-circle me-1"></i>Subscribe to Google Calendar (.ics)
+              </a>
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <section id="join" class="section-alt">
@@ -637,6 +642,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/calendar.js"></script>
 </body>
 
 </html>

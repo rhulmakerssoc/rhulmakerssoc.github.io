@@ -145,3 +145,236 @@ section {
     letter-spacing: -0.03em;
   }
 }
+
+.hero {
+  padding: 5rem 0;
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+
+  .lead {
+    font-size: 1.15rem;
+    color: $makers-muted;
+    line-height: 1.7;
+  }
+
+  // buttons
+  .d-flex.gap-4 {
+    span {
+      font-weight: 500;
+      i {
+        color: darken($makers-blue-dark, 15%) !important;
+      }
+    }
+  }
+}
+
+#about {
+  // cards
+  .card {
+    border-radius: 1rem;
+    border: 1px solid $makers-border !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+      border-color: rgba($makers-blue, 0.6) !important;
+    }
+
+    // icons
+    .fs-2.text-primary {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background-color: $makers-blue-subtle;
+      color: darken($makers-blue-dark, 20%) !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem !important;
+      margin-bottom: 1rem;
+    }
+
+    // workshop checkmarks
+    ul li i {
+      color: $makers-green !important;
+    }
+
+
+    .card-note {
+      font-size: 0.78rem;
+      font-style: italic;
+      color: $makers-muted;
+      line-height: 1.45;
+    }
+  }
+
+  // SURL
+  .card-spotlight {
+    background: linear-gradient(135deg, $makers-yellow-subtle 0%, #ffffff 100%);
+    border: 1px solid rgba($makers-yellow-dark, 0.35);
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+
+    .bi-trophy-fill {
+      color: darken($makers-yellow-dark, 10%) !important;
+    }
+  }
+}
+
+#events {
+  #calendarEventsContainer .card {
+    border-radius: 1rem;
+    border: 1px solid $makers-border !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+      border-color: rgba($makers-blue, 0.6) !important;
+    }
+  }
+
+  // sub box
+  .card-maker {
+    background: $makers-white;
+    border: 1px solid $makers-border;
+    border-radius: 50rem;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+
+    .bi-calendar3 {
+      color: darken($makers-blue-dark, 15%) !important;
+    }
+  }
+}
+
+#join {
+  .card {
+    border-radius: 1rem;
+    border: 1px solid $makers-border !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+    }
+
+    // steps 1,2,3
+    .badge.bg-dark.rounded-circle {
+      width: 44px;
+      height: 44px;
+      font-family: $font-family-heading;
+      font-weight: 800;
+      font-size: 1rem;
+      background-color: $makers-dark !important;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+#committee {
+  // custom component
+  committee-card {
+    display: flex;
+
+    .card {
+      width: 100%;
+      border-radius: 1rem;
+      border: 1px solid $makers-border !important;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05) !important;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+        border-color: rgba($makers-green, 0.5) !important;
+      }
+    }
+  }
+}
+
+// comittee extra info modal
+#committeeModal {
+  .modal-content {
+    border-radius: 1.25rem;
+    border: none;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+  }
+
+  .modal-title {
+    font-family: $font-family-heading;
+    letter-spacing: -0.02em;
+  }
+}
+
+#community {
+  .card {
+    border-radius: 1rem;
+    border: 1px solid $makers-border !important;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+    i {
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08) !important;
+      border-color: rgba($makers-blue, 0.6) !important;
+
+      i {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $makers-dark;
+  color: #94a3b8;
+
+  .h5, h5, h1, h2, h3, h4, h6, .brand-icon {
+    color: $makers-white;
+    font-weight: 700;
+  }
+
+  .text-muted {
+    color: #94a3b8 !important;
+  }
+
+  p {
+    color: #94a3b8;
+  }
+
+  a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $makers-white;
+    }
+
+    &.text-info {
+      color: $makers-blue !important;
+
+      &:hover {
+        color: lighten($makers-blue, 15%) !important;
+      }
+    }
+  }
+
+  hr {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
